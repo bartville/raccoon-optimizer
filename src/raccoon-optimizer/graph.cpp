@@ -1,4 +1,5 @@
 #include "graph.h"
+#include "g2o_loader.h"
 #include <iostream>
 
 namespace raccoon {

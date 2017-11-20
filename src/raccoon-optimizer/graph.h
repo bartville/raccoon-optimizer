@@ -14,7 +14,7 @@ namespace raccoon {
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     Graph();
-    Graph(const std::string& filaname);
+    Graph(const std::string& filename);
     ~Graph();
 
     void addVertex(const int id, Vertex* vertex);

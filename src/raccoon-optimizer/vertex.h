@@ -1,5 +1,6 @@
 #pragma once
 #include <Eigen/Core>
+#include <Eigen/Geometry>
 
 namespace raccoon {
 
@@ -7,16 +8,16 @@ namespace raccoon {
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
 
     int id;
-    Eigen::Isometry3f T;
+    Eigen::Vector3f p;
 
     Vertex() {
       id = -1;
-      T.setIdentity();
+      p.setIdentity();
     }
 
-    Vertex(const int id_, const Eigen::Isometry3f& T_) {
+    Vertex(const int id_, const Eigen::Vector3f& p_) {
       id = id_;
-      T = T_;
+      p = p_;
     }
 
   };
